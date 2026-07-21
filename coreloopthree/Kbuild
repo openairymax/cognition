@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: GPL-2.0-only
+#
+# coreloopthree 子目录 Kbuild
+# CoreLoopThree 三阶段认知循环 kthread 主循环
+#
+# 模块名：airy_clt.ko
+
+obj-m := airy_clt.o
+
+airy_clt-objs := clt_main.o
+
+# [SC] 头文件引用（OS-IRON-014 / 决策 G1）
+# 唯一物理宿主：kernel/include/uapi/linux/airymax/
+# 禁止物理副本，通过 -I 引用
+ccflags-y += -I$(src)/../kernel/include
+ccflags-y += -I$(src)/../kernel/include/uapi/linux
+ccflags-y += -Werror
