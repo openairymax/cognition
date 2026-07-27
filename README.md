@@ -31,7 +31,7 @@ sandboxes.
 - **Token energy efficiency** optimizing tokens-per-joule across heterogeneous accelerators.
 - **Hyper-node sandbox** delegating agent isolation to the `security` subsystem.
 - **`[SC]` contribution** — owns the `cognition_types.h` shared-contract header
-  (single physical source under `kernel/include/airymax/`).
+  (single physical source under `kernel/include/uapi/linux/airymax/`).
 
 ## Relationship with Airymax `coreloopthree` + `frameworks`
 
@@ -64,7 +64,7 @@ Cognition changes are governed by management-repository workflows (each ≤ 2 jo
 | Workflow | Jobs | Applies to cognition via |
 |----------|------|----------------------------|
 | `mgmt-orchestrator.yml` | `file-integrity` + `orchestrate-leaf-ci` | Verifies the `cognition/` submodule dir; aggregates this repo's CI status |
-| `sc-dual-ci.yml` | `sc-validate` + `sc-trigger-and-await` | Guards `cognition_types.h` in the `[SC]` 6+2 set; triggers agentrt mirror PR on changes |
+| `sc-dual-ci.yml` | `sc-validate` + `sc-trigger-and-await` | Guards `cognition_types.h` in the `[SC]` 10 core headers; triggers agentrt mirror PR on changes |
 | `nightly.yml` | `nightly-test-suite` (72h soak exercises the cognition loop) + `nightly-revert-or-budget` | Nightly cron |
 | `release.yml` | `build-and-sign` (SBOM scan of `cognition/`) + `publish-release` | Release tag |
 
@@ -84,7 +84,7 @@ repository's own `.github/workflows/`.
 
 ## Upstream & Downstream
 
-- **Upstream** — `kernel` (kthread, sched_ext, io_uring); `memory` (tiered CXL/PMEM for LLM serving and KV-cache); Airymax `coreloopthree` + `frameworks`.
+- **Upstream** — `kernel` (kthread, sched_tac, io_uring); `memory` (tiered CXL/PMEM for LLM serving and KV-cache); Airymax `coreloopthree` + `frameworks`.
 - **Downstream** — `services` (exposes cognition capabilities to user space); agent applications built on the cognition engine.
 
 ## License

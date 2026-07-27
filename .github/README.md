@@ -27,7 +27,7 @@ cognition/.github/
 | Workflow | Jobs | Relevance to cognition |
 |----------|------|-------------------------|
 | `mgmt-orchestrator.yml` | `file-integrity` + `orchestrate-leaf-ci` | Verifies the `cognition/` submodule dir exists; aggregates this repo's CI status |
-| `sc-dual-ci.yml` | `sc-validate` + `sc-trigger-and-await` | Guards `cognition_types.h` (`[SC]` 6+2 set); creates agentrt mirror PR on changes |
+| `sc-dual-ci.yml` | `sc-validate` + `sc-trigger-and-await` | Guards `cognition_types.h` (`[SC]` 10 core headers); creates agentrt mirror PR on changes |
 | `nightly.yml` | `nightly-test-suite` + `nightly-revert-or-budget` | 72h soak exercises the CoreLoopThree kthread and LLM scheduling; chaos (CPU hotplug) |
 | `release.yml` | `build-and-sign` + `publish-release` | `syft cognition/` SBOM; signed release artifacts |
 
@@ -37,7 +37,7 @@ cognition/.github/
   coverage, Wasm 3.0 runtime unit tests, and token-efficiency benchmarks; keep
   each workflow ≤ 2 jobs.
 - `[SC]` header `cognition_types.h` lives at
-  `kernel/include/airymax/cognition_types.h` — single physical source, no
+  `kernel/include/uapi/linux/airymax/cognition_types.h` — single physical source, no
   duplicates (OS-IRON-014).
 - Cognition APIs use the `airy_*` prefix; Rust modules follow `cargo fmt`.
 
