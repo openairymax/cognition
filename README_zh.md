@@ -46,7 +46,7 @@ cognition/
 
 ### 上游
 
-- **agentrt-linux 内核（AirymaxOS Kernel）** — 提供认知循环所需的 kthread、sched_ext 与 io_uring 原语
+- **agentrt-linux 内核（AirymaxOS Kernel）** — 提供认知循环所需的 kthread、sched_tac 与 io_uring 原语
 - **agentrt-linux 内存管理（AirymaxOS Memory）** — 提供 LLM 服务与 KV-cache 所用的分层 CXL/PMEM 内存
 - **Airymax coreloopthree + frameworks** — 提供被复用并扩展的三循环模型与智能体框架
 
