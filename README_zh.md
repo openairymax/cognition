@@ -15,7 +15,7 @@
 
 **agentrt-linux 认知（AirymaxOS Cognition）**（`airymaxos-cognition`）是 agentrt-linux（AirymaxOS）（智能体操作系统）的认知引擎子系统。它将 CoreLoopThree 作为内核线程（kthread）运行，嵌入 Wasm 3.0 运行时承载智能体逻辑，以 token 感知的能效策略调度 LLM 推理，并在 Cupolas 沙箱内隔离超节点智能体执行。
 
-在 agentrt-linux 0.1.1 中，本仓库为**文档体系完成**，包含设计文档、参考发行版规范及架构草案。实际的内核与 OS 开发在 1.0.1 版本进行。
+在 Airymax 0.1.1 中，本仓库为**文档体系完成**，包含设计文档、参考发行版规范及架构草案。实际的内核与 OS 开发在 1.0.1 版本进行。
 
 ### 核心技术
 
