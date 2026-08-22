@@ -23,7 +23,7 @@ Thinkdual 是 AirymaxOS 认知子系统的双模式推理组件，受 Kahneman
 | 慢模式 | `AIRY_THINK_SLOW` | 深度推理，高质量，多轮迭代 | 复杂规划、罕见情况、需验证 |
 
 两种模式由 [SC] `cognition_types.h` 中的 `enum airy_think_mode` 定义，
-确保用户态（agentrt）与内核态（agentrt-linux）使用同一套语义。
+确保用户态（agentrt）与内核态（agent-linux）使用同一套语义。
 
 ## 2. 与 CoreLoopThree 的接口
 
@@ -77,7 +77,7 @@ Thinkdual 子组件（`thinkdual/`）将在后续版本提供：
 | `[SC]` | `enum airy_think_mode` | 用户态/内核态共享枚举 |
 | `[SC]` | `airy_q16_t` + Q16.16 宏 | 共享定点类型 |
 | `[SC]` | `struct airy_cog_config` | 共享配置结构 |
-| `[IND]` | Thinkdual 推理引擎实现 | agentrt-linux 专属，无 agentrt 对应物 |
+| `[IND]` | Thinkdual 推理引擎实现 | agent-linux 专属，无 agentrt 对应物 |
 
 ## 6. 当前实现状态
 
