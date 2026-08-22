@@ -1,12 +1,12 @@
 **Language:** English | [简体中文](README_zh.md)
 
-# cognition — agentrt-linux (AirymaxOS) Cognition
+# cognition — agent-linux (AirymaxOS) Cognition
 
 [![Version](https://img.shields.io/badge/version-0.1.1-5a6b7e)](https://atomgit.com/openairymax/cognition)
 [![License](https://img.shields.io/badge/license-AGPL--3.0+Apache--2.0-4a90d9)](LICENSE)
 
-> Cognition subsystem of [agentrt-linux (AirymaxOS)](https://atomgit.com/openairymax/agentrt-linux) — the AI Agent Operating System.
-> One of the 8 leaf repositories aggregated by the [agentrt-linux](https://atomgit.com/openairymax/agentrt-linux) management repo.
+> Cognition subsystem of [agent-linux (AirymaxOS)](https://atomgit.com/openairymax/agent-linux) — the AI Agent Operating System.
+> One of the 8 leaf repositories aggregated by the [agent-linux](https://atomgit.com/openairymax/agent-linux) management repo.
 > Reuses and extends the Airymax `coreloopthree` (and `frameworks`) module for OS-level cognition.
 
 Copyright (c) 2025-2026 SPHARX Ltd. All Rights Reserved.
@@ -16,7 +16,7 @@ Copyright (c) 2025-2026 SPHARX Ltd. All Rights Reserved.
 ## Positioning
 
 The **cognition** leaf repository is the cognition engine subsystem of
-agentrt-linux (AirymaxOS). It runs CoreLoopThree as a kernel thread (kthread)
+agent-linux (AirymaxOS). It runs CoreLoopThree as a kernel thread (kthread)
 implementing the three-in-one cognition–action–memory loop, embeds a Wasm 3.0
 runtime for agent logic, schedules LLM inference with token-aware energy
 efficiency (Thinkdual), and isolates hyper-node agent execution inside Cupolas
@@ -78,7 +78,7 @@ repository's own `.github/workflows/`.
 - **Commit prefix**: `cognition:`.
 - **Code style**: C — tab-8, 80 cols (`.clang-format`); Rust — `cargo fmt`
   (4-space); run `make format-check`.
-- **`[SC]` changes**: edits to `cognition_types.h` require dual CI (agentrt-linux
+- **`[SC]` changes**: edits to `cognition_types.h` require dual CI (agent-linux
   `sc-dual-ci.yml` + agentrt mirror PR) and L1+L3 approval per OS-IRON-014.
 - **Function prefix**: `airy_*` (not legacy `airymaxos_*`).
 

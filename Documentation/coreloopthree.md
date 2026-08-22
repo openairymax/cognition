@@ -90,7 +90,7 @@ airy_clt: kthread 启动 tid=1234 comm=clt_main
 
 | 层级 | 实体 | 说明 |
 |------|------|------|
-| `[IND]` | `airy_clt` 模块 | agentrt-linux 专属实现，无 agentrt 对应物 |
+| `[IND]` | `airy_clt` 模块 | agent-linux 专属实现，无 agentrt 对应物 |
 
 CoreLoopThree 是 AirymaxOS 在内核态实现认知循环的尝试，与 agentrt 用户态
 认知框架通过 [SC] `cognition_types.h` 共享阶段与模式枚举，但模块本身
