@@ -29,6 +29,6 @@ License: GPL-2.0-only
 
 ## 相关文档
 
-- [07-directory-structure.md](../../../docs/AirymaxOS/10-architecture/07-directory-structure.md) §4.5 — cognition 子仓完整目录结构
+- [07-directory-structure.md](../../../docs/docs-linux/10-architecture/07-directory-structure.md) §4.5 — cognition 子仓完整目录结构
 - [cognition_types.h](../../kernel/include/uapi/linux/airymax/cognition_types.h) — [SC] 认知类型契约
 - 顶层 [CONTRIBUTING.md](../CONTRIBUTING.md) — cognition 子仓贡献指南

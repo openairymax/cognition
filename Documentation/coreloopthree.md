@@ -4,7 +4,7 @@
 > **组件**：`coreloopthree/`
 > **可编译入口**：`coreloopthree/clt_main.c` → `airy_clt.ko`
 > **[SC] 依赖**：`kernel/include/uapi/linux/airymax/cognition_types.h`
-> **设计文档**：`docs/AirymaxOS/10-architecture/07-directory-structure.md` §4.5
+> **设计文档**：`docs/docs-linux/10-architecture/07-directory-structure.md` §4.5
 
 Copyright (c) 2025-2026 SPHARX Ltd. All Rights Reserved.
 
