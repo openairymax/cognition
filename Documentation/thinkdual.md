@@ -4,7 +4,7 @@
 > **组件**：`thinkdual/`（规划中，本文件为设计占位）
 > **[SC] 依赖**：`kernel/include/uapi/linux/airymax/cognition_types.h`
 > **协同组件**：`coreloopthree/`（CoreLoopThree 在 THINK 阶段调用 Thinkdual）
-> **设计文档**：`docs/AirymaxOS/10-architecture/07-directory-structure.md` §4.5
+> **设计文档**：`docs/docs-linux/10-architecture/07-directory-structure.md` §4.5
 
 Copyright (c) 2025-2026 SPHARX Ltd. All Rights Reserved.
 
