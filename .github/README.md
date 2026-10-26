@@ -1,7 +1,7 @@
 # `.github/` — cognition Leaf Repository Automation
 
 > GitHub automation directory for the **cognition** leaf repository of
-> [agentrt-linux (AirymaxOS)](https://atomgit.com/openairymax/agentrt-linux).
+> [agent-linux (AirymaxOS)](https://atomgit.com/openairymax/agent-linux).
 
 Copyright (c) 2025-2026 SPHARX Ltd. All Rights Reserved.
 
@@ -26,8 +26,8 @@ cognition/.github/
 
 | Workflow | Jobs | Relevance to cognition |
 |----------|------|-------------------------|
-| `mgmt-orchestrator.yml` | `file-integrity` + `orchestrate-leaf-ci` | Verifies the `cognition/` submodule dir exists; aggregates this repo's CI status |
-| `sc-dual-ci.yml` | `sc-validate` + `sc-trigger-and-await` | Guards `cognition_types.h` (`[SC]` 10 core headers); creates agentrt mirror PR on changes |
+| `mgmt-verify.yml` | `file-integrity` + `orchestrate-leaf-ci` | Verifies the `cognition/` submodule dir exists; aggregates this repo's CI status |
+| `sc-verify.yml` | `sc-validate` + `sc-trigger-and-await` | Guards `cognition_types.h` (`[SC]` 10 core headers); creates agentrt mirror PR on changes |
 | `nightly.yml` | `nightly-test-suite` + `nightly-revert-or-budget` | 72h soak exercises the CoreLoopThree kthread and LLM scheduling; chaos (CPU hotplug) |
 | `release.yml` | `build-and-sign` + `publish-release` | `syft cognition/` SBOM; signed release artifacts |
 
