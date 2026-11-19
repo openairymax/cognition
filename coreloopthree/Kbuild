@@ -11,7 +11,8 @@ airy_clt-objs := clt_main.o
 
 # [SC] 头文件引用（OS-IRON-014 / 决策 G1）
 # 唯一物理宿主：kernel/include/uapi/linux/airymax/
-# 禁止物理副本，通过 -I 引用
-ccflags-y += -I$(src)/../kernel/include
-ccflags-y += -I$(src)/../kernel/include/uapi/linux
+# 禁止物理副本，通过 -I 引用。$(srctree) 由内核构建系统给出（源码树根），
+# 相对路径在 out-of-tree 外部模块构建下会解析到模块目录，故不可用。
+ccflags-y += -I$(srctree)/include
+ccflags-y += -I$(srctree)/include/uapi/linux
 ccflags-y += -Werror
