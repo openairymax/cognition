@@ -1,0 +1,4 @@
+# 三节点规划：取数、变换、提交，最大层级 2。
+fetch 1 allow ok
+transform 2 allow ok
+commit 2 allow ok

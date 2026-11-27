@@ -1,0 +1,2 @@
+# 层级 11 超过默认 dag_max_depth=10，用于深度守卫分支。
+deep 11 allow ok

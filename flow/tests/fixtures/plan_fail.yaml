@@ -1,0 +1,4 @@
+# 变换节点预期失败，用于触发补偿与重试分支。
+fetch 1 allow ok
+transform 2 allow fail
+commit 2 allow ok

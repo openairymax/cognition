@@ -39,6 +39,9 @@ cognition/.github/
 - Thinkdual mode coverage is enforced today by the management repository's
   `cognition-verify` workflow (gate `ci/gates/cognition-thinkdual.sh`); the
   policy fixture and the documented boundary score must move together.
+- The three-phase cognitive loop is covered by the `cogflow` job of the same
+  workflow (gate `ci/gates/cognition-flow.sh`); plan fixtures, compensation
+  accounting and the L1 memory contract must change together.
 - `[SC]` header `cognition_types.h` lives at
   `kernel/include/uapi/linux/airymax/cognition_types.h` — single physical source, no
   duplicates (OS-IRON-014).

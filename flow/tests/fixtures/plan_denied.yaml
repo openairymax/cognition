@@ -1,0 +1,4 @@
+# 修剪节点的守卫结论为拒绝，用于权限中止分支。
+fetch 1 allow ok
+prune 2 deny ok
+commit 2 allow ok
