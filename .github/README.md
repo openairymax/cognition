@@ -36,6 +36,9 @@ cognition/.github/
 - Add leaf-local workflows for CoreLoopThree kthread tests, Thinkdual mode
   coverage, Wasm 3.0 runtime unit tests, and token-efficiency benchmarks; keep
   each workflow ≤ 2 jobs.
+- Thinkdual mode coverage is enforced today by the management repository's
+  `cognition-verify` workflow (gate `ci/gates/cognition-thinkdual.sh`); the
+  policy fixture and the documented boundary score must move together.
 - `[SC]` header `cognition_types.h` lives at
   `kernel/include/uapi/linux/airymax/cognition_types.h` — single physical source, no
   duplicates (OS-IRON-014).

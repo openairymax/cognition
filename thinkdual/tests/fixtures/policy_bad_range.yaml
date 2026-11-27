@@ -1,0 +1,3 @@
+system1:
+  complexity_threshold: 0.3
+  max_latency_ms: 5000

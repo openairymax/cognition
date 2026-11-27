@@ -1,0 +1,17 @@
+# 认知循环策略配置（FR-050：支持运行时热更新）
+system1:
+  enabled: true
+  complexity_threshold: 0.3
+  max_latency_ms: 10
+  cache_ttl_s: 300
+
+system2:
+  enabled: true
+  dag_max_depth: 10
+  llm_timeout_ms: 200
+  feedback_enabled: true
+
+switching:
+  strategy: "score_based"
+  hot_reload: true
+  audit: true
